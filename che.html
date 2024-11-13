@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneLeaf E-Commerce Store</title>
+    <style>
+        body, html {
+            margin: 0;
+            font-family: ink free;
+            color: #40adb9;
+            background-color: #f5f5f5;
+            transition: background-color 0.3s, color 0.3s;
+            background-image: url("https://img.huffingtonpost.com/asset/5d012f352400005117866fbd.jpeg?ops=1200_630") ;
+            background-repeat: no-repeat;
+            background-size:cover;
+            
+          
+            
+        }
+
+        header {
+            background: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            
+        }
+
+        header nav {
+            display: flex;
+            align-items: center;
+            
+        }
+
+        header nav a {
+            color: rgb(73, 190, 153);
+            text-decoration: none;
+            margin: 0 15px;
+            cursor: pointer;
+        }
+
+        .logo {
+            font-family: osake;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .cart-icon {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .hero {
+            
+            text-align: center;
+            padding: 50px 20px;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .shop-now {
+            padding: 10px 20px;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .products, .services {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .service-card, .product-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            width: 200px;
+            background: white;
+            transition: transform 0.2s;
+        }
+        .content {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .content-card{
+        border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            width: 200px;
+            background: white;
+            width: 100%;
+            opacity: 1.25;
+        }
+
+        .product-card:hover, .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img, .service-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product-card .price {
+            font-weight: bold;
+            color: #4CAF50;
+            margin: 10px 0;
+        }
+
+        .cart-display, .contact {
+            background: #f9f9f9;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .checkout-btn {
+            background: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body >
+    <header style="position: sticky;">
+        <nav>
+            <a href="#hero" onclick="scrollToSection('hero')">Home</a>
+            <a href="#services" onclick="scrollToSection('services')">Services</a>
+            <a href="#contact" onclick="scrollToSection('contact')">Contact</a>
+            
+        </nav>
+        <div class="logo">OneSoil</div>
+        <nav>
+            
+            <a href="#products" onclick="scrollToSection('products')">Products</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <h1>We have Soil to Farm Not to Harm</h1>
+            
+        </section>
+
+        <!-- New Services Section -->
+        <section id="services" class="services">
+            <div class="service-card">
+                <h2>Information About Soil Pollution</h2>
+               
+            </div>
+            <div class="service-card">
+                <h2>Alternates of Soil Pollution causing products</h2>
+                <p>The User can Buy Organic products from our Catalogue Section.</p>
+            </div>
+            <div class="service-card">
+                <h2>Join The No Soil Pollution Movement</h2>
+                <p> User can Join us by filling a form</p>
+            </div>
+        </section>
+        <section id="services" class="services">
+            
+        </section>
+        <section id="content" class="content">
+            <div class="content-card" id="#intro">
+                <h1 style="text-align: left; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 50px;">SOIL POLLUTION-A CAUSE OF CONCERN</h1>
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;">Soil pollution refers to the contamination of the Earth's soil by harmful substances, often as a result of human activities. These pollutants can be chemicals, heavy metals, industrial waste, pesticides, plastics, and untreated sewage, which degrade soil quality and pose risks to plant, animal, and human health. Soil pollution disrupts the natural balance of ecosystems, harms agricultural productivity, and can lead to the contamination of water resources. The sources of soil pollution include industrial activities, improper waste disposal, agricultural practices, and urbanization. The long-term impacts of soil pollution include reduced soil fertility, loss of biodiversity, and the accumulation of toxins in the food chain. Addressing soil pollution requires sustainable land management, stricter waste disposal regulations, and public awareness.</p> 
+            </div>
+            <div class="content-card">
+                <h1 style="text-align: left; font-family:'Franklin Gothic Medium', 'Arial Narrow'; font-size: 50px; ">
+                    INCENTIVES/CAUSES
+                </h1>
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-align: left;">
+                    The following are some of the causes of soil pollution:<br>
+                    <ol class="I">
+                        <li style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-align: left;" >Erosion (Water and Wind)</li>
+                        <ul style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-align: left;">
+                           <li> Water Erosion: The most common cause of soil degradation is water erosion, where rainfall and surface runoff wash away the topsoil. This is particularly prevalent in areas with steep slopes, heavy rainfall, and improper land management. </li>
+                           <li>Wind Erosion: In arid and semi-arid regions, strong winds can pick up loose, dry soil and carry it away, leading to a loss of fertile soil.</li>
+                        </ul>
+                        <li style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-align: left;">Deforestation</li>
+                        <ul style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-align: left;">
+                           <li>When trees and vegetation are removed for agriculture, logging, or urban development, the protective cover of plants is lost, making soil more vulnerable to erosion. Roots of plants help bind the soil together, and without them, the soil structure becomes weak.</li>
+                        </ul>
+                        <li style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-align: left;">Overgrazing</li>
+                        <ul style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-align: left;">
+                           <li>When trees and vegetation are removed for agriculture, logging, or urban development, the protective cover of plants is lost, making soil more vulnerable to erosion. Roots of plants help bind the soil together, and without them, the soil structure becomes weak.</li>
+                           
+                        </ul>
+                        <li style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-align: left;">Agriculture Practices</li>
+                        <ul style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-align: left;">
+                           <li>Monoculture Farming: The continuous planting of the same crop depletes specific nutrients in the soil and reduces soil fertility.</li>
+                           <li>Excessive Irrigation: Over-irrigating can lead to waterlogging, salinization, and erosion. It can also cause the leaching of nutrients from the soil.</li>
+                           <li>Improper Plowing: Conventional tillage methods can disturb the soil structure, leaving it more prone to erosion and compaction.</li>
+                           <li>Chemical Use: Overuse of chemical fertilizers, pesticides, and herbicides can degrade soil health by disrupting microbial life and reducing soil fertility over time.</li>
+                        </ul>
+                        <li style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-align: left;">Urbanization</li>
+                        <ul style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-align: left;">
+                           <li>The expansion of cities and infrastructure leads to the conversion of agricultural land or natural habitats into impervious surfaces like roads, buildings, and parking lots. This disrupts the natural water cycle and increases surface runoff, causing soil erosion and degradation in surrounding areas.
+                        </li>
+                           
+                        </ul>
+
+
+                    </ol>
+                   
+                </p>
+            </div>
+        </section>
+        
+        <section id="content" class="content">
+            <div class="content-card">
+                <h1 style="text-align: left; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 50px;">SOLUTIONS TO SOIL POLLUTION</h1>
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;text-align: left; ">1. Sustainable Agricultural Practices: Reducing the use of chemical fertilizers and pesticides and promoting organic farming can help restore soil health. Crop rotation, composting, and using natural fertilizers also contribute to better soil management</p>
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-align: left;">2. Waste Management: Proper disposal of industrial, agricultural, and household waste can reduce contamination. Recycling, composting, and proper landfill management can minimize the harmful impact of waste on the soil.</p> 
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-align: left;">3. Public Awareness and Education: Educating people about the importance of soil conservation, proper waste disposal, and the dangers of pollution can lead to more responsible behavior and community action.</p>
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-align: left;">4. Bioremediation: This involves using plants, bacteria, or fungi to remove or neutralize contaminants from the soil. Certain plants, known as hyperaccumulators, can absorb heavy metals, while microbes can break down harmful chemicals.</p>
+                <p style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; text-align: left;">5. Legislation and Regulation: Governments and organizations can implement stronger environmental regulations to control industrial waste, pesticide use, and hazardous waste disposal.</p>
+            </div>
+            <section id="content" class="content">
+                <div class="content-card" id="#intro">
+                    <h1 style="text-align: left; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 50px;">OUR CATALOGUE SECTION</h1>
+                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;">THIS IS OUR CATALOGUE SECTION, WHERE YOU CAN BUY NON SOIL-POLLUTING ALTERNATES OF HARMFUL FARMING PRODUCTS</p>
+            </section>
+        <section id="products" class="products">
+            <div class="product-card" data-name="Organic Green Tea" data-price="14.99">
+                <img src="https://i5.walmartimages.com/asr/5b2c2cf5-8218-4fac-b1fe-6d21920fdff7_1.65c43f4c47c459f2753e64f678e4652a.jpeg" alt="fertilizer">
+                <h2>Organic Fertilizers</h2>
+                <p class="price">$8.88</p>
+                <button onclick="addToCart('Organic Green Tea', 14.99)">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Organic Green Tea" data-price="14.99">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.4H4562srDgv2__wi_Cy0XAHaHa&pid=Api&P=0&h=180" alt="green leaf manure">
+                <h2>Green Leaf Manure</h2>
+                <p class="price">$5.99</p>
+                <button onclick="addToCart('Organic Green Tea', 14.99)">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Organic Green Tea" data-price="14.99">
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/7a84f570912213.Y3JvcCwxMTYzLDkxMCwxOTAsNzE.png" alt="Vermicompost">
+                <h2>Vermicompost</h2>
+                <p class="price">$5.99</p>
+                <button onclick="addToCart('Organic Green Tea', 14.99)">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Organic Green Tea" data-price="14.99">
+                <img src="https://5.imimg.com/data5/ANDROID/Default/2023/6/315186537/MY/ER/HR/180458364/product-jpeg-1000x1000.jpeg" alt="Manure">
+                <h2>Plant Based manure</h2>
+                <p class="price">$5.99</p>
+                <button onclick="addToCart('Organic Green Tea', 14.99)">Add to Cart</button>
+            </div>
+        </section>        
+                   
+            <!-- Additional products here -->
+        
+
+        </section>
+
+        <!-- New Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4"></textarea><br><br>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 OneSoil Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let cart = [];
+
+        function addToCart(name, price) {
+            const item = cart.find((item) => item.name === name);
+            if (item) {
+                item.quantity += 1;
+            } else {
+                cart.push({ name, price, quantity: 1 });
+            }
+            updateCartDisplay();
+        }
+
+        function updateCartDisplay() {
+            const cartItems = document.getElementById("cart-items");
+            const cartTotal = document.getElementById("cart-total");
+            cartItems.innerHTML = "";
+            let total = 0;
+
+            cart.forEach((item) => {
+                total += item.price * item.quantity;
+                const listItem = document.createElement("li");
+                listItem.textContent = `${item.name} - $${item.price} x ${item.quantity}`;
+                cartItems.appendChild(listItem);
+            });
+
+            cartTotal.textContent = total.toFixed(2);
+        }
+
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
